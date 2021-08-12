@@ -1,12 +1,12 @@
 const Note = require('../src/note')
+const test = new Note('testbook')
 
 describe('Notebook', () => {
     it('should be given a name', () => {
-        let test = new Note('testbook')
         expect(test.name).toBe('testbook')
     })
 
-//     describe('#test', () => {
-//         let test = new note.Note('')
-//     })
+    describe('#addNote', () => {
+        console.log('hi')
+    })
 })
