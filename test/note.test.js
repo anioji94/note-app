@@ -7,10 +7,13 @@ describe('Notebook', () => {
     })
 
     it('should be empty', () => {
-        expect(test.pages).toBe(0)
+        expect(test.pages.length).toBe(0)
     })
 
     describe('#addNote', () => {
-        console.log('hi')
+        it('should add a note to a new page', () => {
+            test.addNote('Test Note', 'Hi, this is a test note')
+            expect(test.pages.length).toBe(1)
+        })
     })
 })
