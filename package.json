@@ -1,0 +1,21 @@
+{
+  "name": "noteapp",
+  "version": "1.0.0",
+  "description": "take notes with the note app",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "note"
+  ],
+  "author": "anioji",
+  "license": "ISC",
+  "dependencies": {
+    "babel-jest": "^27.0.6"
+  },
+  "type": "module"
+}
