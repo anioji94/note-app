@@ -2,6 +2,7 @@ class Note {
 // constructor
 constructor(name = "My Notebook") {
     this.name = name.toString()
+    this.pages = 0
 }
 // add note
 
