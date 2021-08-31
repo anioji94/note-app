@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../src/note.js"></script>
+    <script src="../src/app.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Note App</title>
+</head>
+    <body>
+        <div class="container">
+            <div id="main">
+                <h1>Note App</h1>
+                <br><br>
+                <form >
+                    <div id="title">
+                        <h3>Title</h3>
+                        <input 
+                        type="text" 
+                        name="note-title" 
+                        id="note-title"
+                        placeholder="Name your note!"
+                        >
+                    </div>
+                    <div id="body">
+                        <h3>Body</h3>
+                        <textarea 
+                        name="note-body" 
+                        id="note-body" 
+                        cols="30" 
+                        placeholder="Write out your note!"
+                        rows="10"
+                        spellcheck="true"
+                        ></textarea>
+                    </div>
+                    <button id="submit-note">Save</button>
+                </form>
+            </div>
+            <div id="note-history">
+                <h3>My Notes</h3>
+            </div>
+        </div>
+    </body>
+</html>

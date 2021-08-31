@@ -16,4 +16,24 @@ describe('Notebook', () => {
             expect(test.pages.length).toBe(1)
         })
     })
+
+    describe('#readNote', () => {
+        it('should allow users to read each note', () => {
+            expect(test.readNote('Test Note')).toBe('Hi, this is a test note')
+        })
+    })
+
+    describe('#updateNote', () => {
+        it('should allow users to update existing notes', () => {
+            test.updateNote('Test Note', 'Hi, this is an edited test note')
+            expect(test.readNote('Test Note')).toBe('Hi, this an edited test note')
+        })
+    })
+
+    describe('#deleteNote', () => {
+        it('should delete a note from the title', () => {
+            test.deleteNote('Test Note')
+            expect(test.pages.length).toBe(0)
+        })
+    })
 })

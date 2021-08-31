@@ -15,7 +15,8 @@
   "author": "anioji",
   "license": "ISC",
   "dependencies": {
-    "babel-jest": "^27.0.6"
+    "babel-jest": "^27.0.6",
+    "http-server": "^13.0.1"
   },
   "type": "module"
 }
