@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault()
         // Read innerText of title and body
         note.addNote(title.textContent, body.textContent)
-        console.log('w')
+        console.log(body.value)
     })
 })
 
