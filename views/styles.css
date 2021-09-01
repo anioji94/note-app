@@ -53,3 +53,7 @@ h2 {
 #note-history {
     background-color: lightgreen;
 }
+
+#note {
+    background-color: red;
+}
