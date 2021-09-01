@@ -8,8 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     submit.addEventListener('click', () => {
         event.preventDefault()
         // Read innerText of title and body
-        note.addNote(title.textContent, body.textContent)
-        console.log(body.value)
+        note.addNote(title.value, body.value)
+        console.log(title.value + body.value)
+        console.log(note)
     })
 })
 
