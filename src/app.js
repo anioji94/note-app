@@ -10,11 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault()
         // Read value of title and body
         note.addNote(title.value, body.value)
-        noteList.innerHTML += `<div id="note">\n<h3>${title.value}</h3>\n<p>${body.value}</p>\n</div>`
+        clearText()
+    })
+
+
+    // Utility Functions
+    function clearText() {
         title.value = ""
         body.value = ""
-
-    })
+    }
 
 })
 
