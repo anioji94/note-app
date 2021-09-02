@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function showNotes() {
         let html = ""
         for (let i = 0; i < note.pages.length; i++) {
-            html += "Title: " + note.pages[i][0] + "<br> Note: " + note.pages[i][1]
+            html += `<h3>${note.pages[i][0]}</h3><br><p>${note.pages[i][1]}</p><br>`
         }
         noteList.innerHTML = html
     }
