@@ -5,14 +5,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.querySelector('#note-body')
     const noteList = document.getElementById("note-list");
 
+    
+    console.log(note)
     // addNote
     submit.addEventListener('click', () => {
         event.preventDefault()
         // Read value of title and body
         note.addNote(title.value, body.value)
         clearText()
+        console.log("Title: " + note.pages[0][0] + "\n Note: " + note.pages[0][1] )
+        console.log(note.pages.length)
+        showNotes()
     })
 
+    function showNotes() {
+        let html = ""
+        for (let i = 0; i < note.pages.length; i++) {
+            html += "Title: " + note.pages[i][0] + "<br> Note: " + note.pages[i][1]
+        }
+        noteList.innerHTML = html
+    }
 
     // Utility Functions
     function clearText() {
