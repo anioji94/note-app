@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submit.addEventListener('click', () => {
         event.preventDefault()
         // Read value of title and body
+        emptyNote()
         note.addNote(title.value, body.value)
         clearText()
         console.log("Title: " + note.pages[0][0] + "\n Note: " + note.pages[0][1] )
@@ -18,6 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
         showNotes()
     })
 
+    function emptyNote() {
+        if (title.value == "" || body.value == "") {
+            alert("Both Body and Title fields must be filled");
+            return false;
+        }
+    }
+
+    // showNotes
     function showNotes() {
         let html = ""
         for (let i = 0; i < note.pages.length; i++) {
